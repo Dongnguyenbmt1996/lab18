@@ -1,0 +1,264 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* css header */
+
+.header-asiment {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/banner.jpg");
+  height: 100vh;
+  background-position: center center;
+}
+.header-text {
+  text-align: center;
+  position: relative;
+  top: 150px;
+  color: #fff;
+  line-height: 1.7;
+}
+h1 {
+  font-size: 42px;
+}
+
+/* navbar */
+.nav-container {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+  margin-bottom: 42px;
+}
+.nav-container a {
+  flex-basis: 150px;
+  color: #333;
+  text-decoration: none;
+  border-right: 1px solid #333;
+  text-align: center;
+  padding-top: 20px;
+  height: 50px;
+}
+.nav-container i {
+  color: #48abd8;
+}
+
+.nav-container a:last-child {
+  border-right: none;
+}
+
+/* Thông tin cá nhân */
+.infomation {
+  display: flex;
+  max-width: 1170px;
+  margin: auto;
+  padding: 30px 50px;
+  gap: 180px;
+}
+.infomation-1,
+.infomation-2 {
+  width: 50%;
+  color: #333;
+}
+
+.infomation-1 h2 {
+  padding-bottom: 12px;
+}
+.infomation-2 h2 {
+  padding-bottom: 12px;
+}
+.infomation-2 ul {
+  list-style: none;
+  padding-left: 4px;
+}
+.icon-infomation {
+  padding-top: 32px;
+  color: #48abd8;
+}
+
+/* Phần grid lớn */
+.header-experience {
+  display: flex;
+  padding-bottom: 24px;
+}
+.header-experience h3 {
+  width: 75%;
+  font-size: 24px;
+}
+.jop-infomation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  gap: 32px;
+  max-width: 1170px;
+  margin: auto;
+  padding: 30px 50px;
+}
+.experience {
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #a4a4a4;
+  color: #333;
+}
+.experience ul {
+  padding-left: 10px;
+  list-style: none;
+  line-height: 1.6;
+}
+.body-experience h4 {
+  padding-bottom: 12px;
+}
+.body-experience-1 {
+  padding-bottom: 24px;
+}
+.icon-hobby {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 4px;
+}
+
+.yes {
+  width: 45px;
+  height: 1px;
+  background-color: #48abd8;
+  display: inline-block;
+  margin-right: 10px;
+}
+.no {
+  width: 45px;
+  height: 1px;
+  background-color: #a4a4a4;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.header-experience i {
+  color: #48abd8;
+  font-size: 32px;
+}
+/* chứng chỉ - giải thưởng */
+.achiverment {
+  max-width: 1170px;
+  margin: auto;
+  padding: 30px 50px;
+}
+
+.body-achiverment {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  margin-top: 42px;
+}
+.achiverment-1 img {
+  width: 170px;
+  height: auto;
+  object-fit: contain;
+}
+.achiverment-3 img {
+  width: 170px;
+  height: auto;
+  object-fit: contain;
+}
+.achiverment-1,
+.achiverment-3 {
+  display: flex;
+  gap: 38px;
+}
+h5 {
+  padding-bottom: 12px;
+}
+
+.achiverment-3 {
+  padding-top: 12px;
+}
+
+.achiverment-1 {
+  position: relative;
+  border-bottom: 1px solid #e09600;
+  padding-bottom: 12px;
+}
+.boder-bottom::before {
+  content: "";
+  width: 1px;
+  height: 80px;
+  background-color: rgb(210, 138, 50);
+  position: absolute;
+  display: inline;
+  top: 5px;
+  left: 515px;
+}
+
+.project-1 img {
+  width: 100%;
+  object-fit: contain;
+  padding-bottom: 18px;
+}
+.project-big {
+  max-width: 1170px;
+  padding: 30px 50px;
+  margin: auto;
+}
+.project-big-detal {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+}
+
+.project-1 {
+  border: 1px solid #a4a4a4;
+}
+.project-1 h3 {
+  padding-left: 12px;
+}
+.project-timeline {
+  padding: 12px;
+}
+.project-tetail {
+  padding: 12px;
+  font-size: 13px;
+}
+tr {
+  height: 50px;
+}
+.table-project p {
+  width: 60px;
+}
+.table-project td {
+  vertical-align: top;
+}
+.project-timeline i {
+}
+
+.container-footer {
+  max-width: 1170px;
+  padding: 30px 50px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.container-footer p {
+  padding-right: 12px;
+  align-self: center;
+}
+.container-footer i {
+  font-size: 28px;
+  color: #48abd8;
+}
+.avatar {
+  border: 5px solid #fff;
+
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  transform: scale(1.7);
+  top: -40px;
+  position: relative;
+}
+.nav-2 {
+  flex-basis: 300px;
+}

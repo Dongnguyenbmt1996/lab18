@@ -1,0 +1,493 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+  /* background: #909090; */
+}
+
+section > .container,
+.job-container,
+.nav-container,
+.certificate-container,
+.container-project,
+.about-container {
+  width: 1170px;
+  margin: auto;
+  display: block;
+
+  padding: 30px 50px;
+}
+
+#nav-bar {
+  text-align: center;
+}
+
+/* BANNER CSS CHỮ NẰM TRÊN ẢNH -SỬ DỤNG POSITION */
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/banner.jpg");
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+}
+
+.banner-text {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: #fff;
+  text-align: center;
+}
+
+.img-banner {
+  height: 100vh;
+  z-index: -1;
+}
+
+header h1 {
+  font-size: 44px;
+  margin-bottom: 12px;
+  line-height: 1.1;
+}
+
+header span {
+  font-size: 12px;
+}
+
+/* NAVBAR CSS */
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid #6f6f6f; */
+  height: 70px;
+}
+
+.nav-container a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  /* border-left: 1px solid #6f6f6f;
+  border-right: 1px solid #6f6f6f; */
+  border-collapse: collapse;
+}
+
+.nav {
+  flex-basis: 120px;
+  font-size: 14px;
+}
+.nav-1,
+.nav-3 {
+  border-left: 1px solid #939393;
+  border-right: 1px solid #939393;
+}
+
+.nav-container i {
+  color: rgba(60, 182, 222, 0.9);
+}
+
+/* Thông tin cá nhân css */
+
+/* css bố cục theo grid */
+.about-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr auto;
+  margin-bottom: 64px;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+#personal-info {
+  padding-left: 48px;
+  margin-bottom: 24px;
+}
+
+.icon--info {
+  grid-column: 2;
+  padding-left: 48px;
+}
+
+/* Css padding căn chỉnh nội dung */
+#about {
+  padding-top: 32px;
+}
+#target {
+  padding-left: 48px;
+}
+#target p,
+ul {
+  color: #6f6f6f;
+}
+
+.mt-40 {
+  list-style: none;
+  line-height: 1.6;
+}
+
+#target p {
+  line-height: 1.6;
+}
+.icon--info i {
+  color: rgba(60, 182, 222, 0.9);
+}
+.section-title {
+  font-size: 24px;
+  color: #505050;
+  margin-bottom: 24px;
+}
+/* CSS THÔNG TIN NGHỀ NGHIỆP */
+/* GRID  */
+
+.job-container {
+  display: grid;
+  grid-template-columns: 33% 33% 34%;
+  grid-template-rows: 1fr auto;
+  column-gap: 58px;
+  row-gap: 64px;
+  color: #6f6f6f;
+  margin-bottom: 64px;
+}
+
+#job-info {
+  align-items: center;
+  justify-items: center;
+}
+.job-activi {
+  grid-column: 3;
+  grid-row: 1/2;
+}
+.job-hobby {
+  grid-column: 1/2;
+  grid-row: 2;
+}
+.job-langues {
+  grid-column: 2/3;
+  grid-row: 2;
+}
+.job-skill {
+}
+.info-small {
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+.info-small-body {
+  grid-column: 1/-1;
+}
+.info-small-header-right i {
+  font-size: 42px;
+}
+.info-small-body--1 li {
+  list-style: none;
+}
+
+.info-small-body {
+  margin-top: 48px;
+}
+.info-header {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  align-items: flex-end;
+  width: 350px;
+}
+.info-small-body--1 {
+  margin-bottom: 48px;
+  line-height: 1.6;
+}
+.info-small-body--1 h3 {
+  margin-bottom: 6px;
+}
+.info-small-body--1 p {
+  margin-bottom: 24px;
+  font-style: italic;
+}
+.ul-info {
+  margin-left: 14px;
+  list-style: disc;
+}
+.text-info-small-header {
+  font-size: 24px;
+  color: #505050;
+}
+
+/* boder của phần nghề nghiệp */
+.job-experience,
+.job-study,
+.job-activi,
+.job-hobby,
+.job-langues,
+.job-skill {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 12px;
+}
+
+/* css time line của phần nghề nghiệp */
+.time-line .info-small-body--1 {
+  position: relative;
+  padding-left: 12px;
+}
+.time-line .title-h3::before {
+  position: absolute;
+  content: "\2022";
+  font-size: 32px;
+  color: rgba(5, 112, 235, 0.9);
+  border: 1px solid #fff;
+  border-radius: 50%;
+  top: -11px;
+  left: -7px;
+}
+/* phần sở thích */
+
+.icon-hobby {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 1fr auto;
+  gap: 24px 12px;
+  margin-left: 14px;
+  margin-right: 14px;
+  align-items: center;
+}
+
+.ic-hobbby-1,
+.ic-hobby-4 {
+  height: 48px;
+  width: 48px;
+  padding-top: 14px;
+  padding-left: 12px;
+  border: 2px solid #199cdb;
+  border-radius: 50%;
+  color: #199cdb;
+}
+.ic-hobby-2,
+.ic-hobby-3 {
+  height: 48px;
+  width: 48px;
+  padding-top: 14px;
+  padding-left: 16px;
+  border: 2px solid #199cdb;
+  border-radius: 50%;
+  color: #199cdb;
+}
+.hobby {
+  font-size: 16px;
+}
+/* css phần ngôn ngữ - kỹ năng - tạo thẻ span */
+
+.span-1 {
+  background-color: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.span-no {
+  background-color: #fff;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.span-big {
+  background-color: #199cdb;
+  display: inline-block;
+  height: 4px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.language-span {
+  margin-bottom: 14px;
+}
+
+/* CSS CHỨNG CHỈ GIẢI THƯỞNG CHIA LÀM 2 CỘT THEO YÊU CẦU */
+
+.certificate-img {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+
+  /* margin-left: 14px; */
+}
+.certificate-img {
+  width: 1170px;
+}
+
+.certificate-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.certificate-container h1 {
+  margin-bottom: 54px;
+}
+.section-title {
+  font-size: 24px;
+  color: #505050;
+}
+/* GRID CHO NỘI DUNG BÊN TRONG TỪNG CHỨNG CHỈ */
+.certificate-container-1,
+.certificate-container-2,
+.certificate-container-3 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 18px;
+}
+.certificate-text p {
+  margin-bottom: 12px;
+}
+.certificate-text ul {
+  list-style: none;
+  line-height: 1.5;
+}
+
+/* BỔ SUNG BODER */
+.certificate-container-1,
+.certificate-container-2 {
+  padding-bottom: 32px;
+  border-bottom: 2px solid #d6c08d;
+}
+
+.certificate-container-3 {
+  padding-top: 32px;
+}
+
+.certificate-img {
+  position: relative;
+}
+
+.certificate-text::after {
+  content: "";
+  background-color: #d6c08d;
+  width: 1px;
+  height: 110px;
+  left: 530px;
+  top: 0px;
+  position: absolute;
+}
+
+/* Grid 3 cột của dự án theo yêu cầu đề bài */
+.project-big {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+
+  column-gap: 42px;
+}
+.project-big-1 {
+  display: grid;
+  grid-template-rows: 1fr auto auto auto;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.container-project {
+  color: #6f6f6f;
+}
+.img-project {
+  width: 100%;
+
+  object-fit: contain;
+}
+
+.project-big {
+  margin-top: 32px;
+}
+.content-project-detail {
+}
+
+/* css text của dự án */
+
+.section-title-project {
+  font-size: 24px;
+  color: #505050;
+  margin-top: 42px;
+}
+
+.project-header {
+  color: #6f6f6f;
+  font-weight: 600;
+  padding: 16px 0 16px 16px;
+}
+
+.project-header-1 {
+  padding: 16px 0 16px 16px;
+}
+.project-header-1 i {
+  padding-left: 24px;
+}
+
+.table-project {
+  line-height: 1.6;
+  text-align: left;
+  font-size: 13px;
+  padding-left: 8px;
+  padding-right: 8px;
+  height: 200px;
+}
+.table-project td {
+  padding: 8px 0;
+  vertical-align: top;
+}
+.table-project p {
+  width: 80px;
+}
+
+/* border của dự án */
+.project-header,
+.project-header-1 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* PHẦN FOOTER */
+
+.icon-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.icon-footer li {
+  padding-right: 24px;
+}
+.icon-facebook-circled,
+.icon-linkedin-circled,
+.icon-github-circled {
+  font-size: 22px;
+  color: #199cdb;
+}
+#footer {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+/* Phần ảnh cá nhân */
+.header-assignment,
+.img-avt,
+.bg-grey {
+  position: relative;
+}
+.img-avt {
+  border: 5px solid #fff;
+  z-index: 2;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  transform: scale(1.7);
+}
+.nav-2 {
+  flex-basis: 300px;
+}
